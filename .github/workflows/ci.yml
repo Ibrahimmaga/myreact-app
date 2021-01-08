@@ -5,8 +5,8 @@ on:
   push:
     branches: [master] 
 jobs:
-  linux-build:
-    runs-on: ubuntu-latest
+  os-validation:
+    runs-on: ${{matrix.os}}
     strategy:
       matrix: 
         os: [ubuntu-latest, windows-latest, macos-latest]
