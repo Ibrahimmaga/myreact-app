@@ -26,15 +26,29 @@ jobs:
       - run: npm test -- --coverage
         env: 
           CI: true
+      - name: Upload Test --coverage
+        uses: actions/uplaod-artifact@v1
+        with:
+          name: code-coverage
+          path: coverage
+
       - name: Build Project
         if: github.event_name == 'push'
         run: npm run build
+      - name: Upload build Folder
+        if: github.event_name == 'push'
+        uses: actions/uplaod-artifact@v1
+        with:
+          name: build
+          path: build
       - name: deploy to staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain panoramic-bridge.surge.sh
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+
   window-build:
     runs-on: windows-latest
     steps:
