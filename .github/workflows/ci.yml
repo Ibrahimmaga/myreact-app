@@ -8,8 +8,6 @@ on:
 jobs:
   linux-build:
     runs-on: ubuntu-latest
-    
-
     steps:
       - uses: actions/checkout@v2
       - name: Cache node_modules
@@ -24,7 +22,7 @@ jobs:
         with:
           node-version: "12.x"
       - run: npm ci
-      - run: npm run format:check, 
+      - run: npm run format:check
       - run: npm run format
       - run: npm test -- --coverage
         env: 
@@ -74,7 +72,7 @@ jobs:
         with:
           node-version: "12.x"
       - run: npm ci
-      - run: npm run format:check,
+      - run: npm run format:check
       - run: npm run format
 
       - run: npm test -- --coverage
@@ -106,7 +104,7 @@ jobs:
         with:
           node-version: "12.x"
       - run: npm ci
-      - run: npm run format:check,
+      - run: npm run format:check
       - run: npm run format
       - run: npm test -- --coverage
         env: 
