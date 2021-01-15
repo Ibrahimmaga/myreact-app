@@ -35,6 +35,7 @@ jobs:
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+          
   window-build:
     runs-on: windows-latest
     steps:
@@ -66,6 +67,7 @@ jobs:
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
   macOS-build:
     runs-on: ubuntu-latest
     steps:
