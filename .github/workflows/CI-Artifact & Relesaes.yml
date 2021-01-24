@@ -1,9 +1,9 @@
 name: CI - build-Artifact
 on:
   pull_request:
-    branches: [develop]
+    branches: [develop, master]
   push:
-    branches: [develop]
+    branches: [develop, master]
       
 jobs:
   build-articats:
@@ -42,6 +42,13 @@ jobs:
         with: 
           name: build
           path: build
+
+      - name: Create a release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secreats.GITHUB_TOKEN }}
+
       - name: deploy to staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain panoramic-bridge.surge.sh
