@@ -2,3 +2,4 @@ build
 covarage
 node_modules
 packakage-lock.json
+release.config.js
