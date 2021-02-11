@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-# surge panoramic-bridge.surge.sh
+# develop surge panoramic-bridge.surge.sh
+# production extra-small-girls.surge.sh
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
