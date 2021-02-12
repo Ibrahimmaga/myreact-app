@@ -1,5 +1,4 @@
-# Getting Started with Create React App
-## ![](https://github.com/Ibrahimmaga/myreact-app/workflows/CI/badge.svg?branch=develop&event=pull_request).
+### Getting Started with Create React App
 
 ## develop surge panoramic-bridge.surge.sh
 ## production extra-small-girls.surge.sh
