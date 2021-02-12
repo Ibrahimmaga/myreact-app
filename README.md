@@ -1,7 +1,7 @@
-# Getting Started with Create React App
-![](https://github.com/Ibrahimmaga/myreact-app/workflows/CI-build-Artifact/badge.svg?branch=develop&event=push)
-# develop surge panoramic-bridge.surge.sh
-# production extra-small-girls.surge.sh
+### Getting Started with Create React App
+
+## develop surge panoramic-bridge.surge.sh
+## production extra-small-girls.surge.sh
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

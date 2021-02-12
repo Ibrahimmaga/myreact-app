@@ -1,4 +1,4 @@
-name: CI-build-Artifact
+name: CI - build-Artifact
 on:
   pull_request:
     branches: [develop, master]
