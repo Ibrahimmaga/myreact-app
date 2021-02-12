@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+![](https://github.com/Ibrahimmaga/myreact-app/workflows/CI/badge.svg?branch=develop&event=push)
 # develop surge panoramic-bridge.surge.sh
 # production extra-small-girls.surge.sh
 
