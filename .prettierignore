@@ -3,3 +3,4 @@ covarage
 node_modules
 packakage-lock.json
 release.config.js
+commitlint.config.js
